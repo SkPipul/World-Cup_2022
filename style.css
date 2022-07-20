@@ -10,10 +10,10 @@ body{
 .top-banner{
     display: flex;
     background-color: #161616;
-    width: 80%;
-    height: 50%;
+    width: 1050px;
+    height: 604px;
     margin-top: 50px;
-    margin-left: 165px;
+    margin-left: 210px;
     border-radius: 30px;
 }
 .banner-heading{
@@ -48,8 +48,8 @@ body{
 }
 .contant{
     display: flex;
-    column-gap: 10px;
-    width: 80%;
+    /* column-gap: 10px; */
+    width: 1210px;
     height: 400px;
     background-color: white;
     margin-bottom: 200px;
@@ -121,6 +121,26 @@ body{
 .match-text{
     margin-left: 20px;
 }
+
+.tab-button{
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        background-color: orangered;
+        border: 1px solid orangered;
+        border-radius: 10px;
+        padding: 10px;
+        width: 100px;
+        align-items: center;
+        justify-content: center;
+        margin-left: 690px;
+        visibility: hidden;
+}
+.tab-button a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
 .ending{
     margin-top: 100px;
     background-color: #161616;
@@ -146,4 +166,118 @@ hr{
 .option a{
     text-decoration: none;
     color: #B9B9B9;
+}
+
+/* Responsive version ------*/
+
+@media only screen and (min-width:769px) and (max-width:1024px) {
+    .top-banner{
+        width: 1050px;
+        height: 604px;
+        margin-left: 4px;
+    }
+    .container{
+        margin-top: 100px;
+    }
+    .contant{
+        width: 1210px;
+        height: 400px;
+        margin-bottom: 200px;
+    }
+    .contant-blog{
+    height: 250px;
+    width: 184px;
+    }
+    .link-blog{
+        padding: 10px 70px;
+    }
+    .link-group{
+        padding: 10px 45px;
+    }
+    .link-match{
+        padding: 10px 13px;
+    }
+    .contant-match{
+        grid-template-columns: repeat(3, 260px);
+    }
+    .match-info{
+        border: none;
+    }
+    .ending{
+        height: 250px;
+        width: 1050px;
+    }
+}
+/* Tablet version -----*/
+
+@media only screen and (min-width:481px) and (max-width:768px) {
+    .top-banner{
+        width: 757px;
+        height: 760px;
+        margin-left: 20px;
+        margin-top: 0px;
+    }
+    .banner-text {
+        margin-left: 34px;
+        margin-top: 40px;
+    }
+    .banner-image img {
+        width: 498px;
+        height: 615px;
+    }
+    .container{
+        margin-left: 21px;
+    }
+    .contant{
+        margin-bottom: 540px;
+    }
+    .contant-blog{
+            height: 51px;
+            width: 360px;
+            row-gap: 80px;
+            column-gap: 64px;
+            position: absolute;
+            display:  -webkit-box;
+            margin-top: -60px;
+            margin-left: 0px;
+            background-color: white;
+        }
+    .contant-match {
+            grid-template-columns: repeat(2, 318px);
+            column-gap: 55px;
+            row-gap: 28px;
+        }
+    .ending{
+            width: 810px;
+        }
+    .option {
+            display: grid;
+            grid-template-columns: repeat(6, 122px);
+            text-align: center;
+            margin-left: 5px;
+    }
+    .tab-button{
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        background-color: orangered;
+        border: 1px solid orangered;
+        border-radius: 10px;
+        padding: 10px;
+        width: 100px;
+        align-items: center;
+        justify-content: center;
+        margin-left: 333px;
+        visibility: visible;
+}
+.tab-button a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+} 
+
+/* Mobile Version ---------*/
+@media only screen and (min-width:320px) and (max-width:480px) {
+    
 }
