@@ -96,6 +96,7 @@ body{
 .contant-match{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    row-gap: 12px;
 }
 .contant-box{
     height: 160px;
