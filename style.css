@@ -167,6 +167,18 @@ hr{
     text-decoration: none;
     color: #B9B9B9;
 }
+.facebook{
+    margin-right: 30px;
+}
+.insta{
+    margin-left: 30px;
+}
+.footer-icon{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+    row-gap: 10px;
+}
 
 /* Responsive version ------*/
 
@@ -279,5 +291,65 @@ hr{
 
 /* Mobile Version ---------*/
 @media only screen and (min-width:320px) and (max-width:480px) {
-    
+    .top-banner {
+            display: flex;
+            flex-direction: column;
+            background-color: #161616;
+            width: 800px;
+            height: 1055px;
+            margin-top: 0px;
+            margin-left: 7px;
+            border-radius: 30px;
+            text-align: center;
+    }
+    .banner-text {
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-top: 80px;
+    }
+    .banner-image{
+        text-align: center;
+    }
+    .banner-image img {
+        width: 583px;
+        height: 600px;
+        margin-right: -54px;
+        margin-top: 33px;
+    }
+    .container{
+        display: block;
+        margin-top: 50px;
+    }
+    .contant{
+        display: block;
+        width: 0px;
+        height: 2690px;
+        column-gap: 10px;
+    }
+    .contant-blog{
+        width: 320px;
+        height: 380px;
+        background-color: white;
+        margin-left: 227px;
+    }
+    .contant-match{
+        grid: none;
+        row-gap: 28px;
+        margin-left: 170px;
+    }
+    .contant-match img {
+        width: 350px;
+        height: 225px;
+    }
+    .ending{
+        height: 430px;
+        width: 795px;
+    }
+    .option{
+        grid: none;
+        display: flex;
+        flex-direction: column;
+        margin-left: -8px;
+        align-items: center;
+    }
 }
